@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+		<link rel="stylesheet" href="./css/font-awesome.css" />
+		<link rel="stylesheet" href="estilos.css" />
+
+		<title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Sign-up form start -->
+		<div class="contenedor">
+			<section class="contenedor__subcriptor oculto">
+				<div class="contenedor__formulario">
+					<h1>Stay updated!</h1>
+					<div class="formulario__info"></div>
+					<p>Join 60,000+ product managers receiving monthly updates on:</p>
+					<div class="formulario__info-lista">
+						<ul class="formulario__lista fa-ul">
+							<li>
+								<span class="li-icon"><i class="fa-li fa fa-check-circle"></i></span>Product
+								discovery and building what matters
+							</li>
+							<li>
+								<span class="li-icon"><i class="fa-li fa fa-check-circle"></i></span>Measuring to
+								ensure updates are a success
+							</li>
+							<li>
+								<span class="li-icon"><i class="fa-li fa fa-check-circle"></i></span>And much more!
+							</li>
+						</ul>
+					</div>
+
+					<form action="" method="get">
+						<label for="correo">
+							Email address<br />
+
+							<input type="text" name="correo" id="correo" placeholder="email@company.com" />
+						</label>
+						<p class="validate-correo">Por favor introduzca un correo válido</p>
+						<button type="submit" name="enviar" id="submit-btn" class="submit-btn btn">
+							Subscribe to monthly newsletter
+						</button>
+					</form>
+
+					<p>Hola mundo! Mi primera subida a GitHub</p>
+				</div>
+				<div class="imagen__formulario">
+					<img
+						src="./assets/images/illustration-sign-up-desktop.svg"
+						class="imagen__formulario--svg"
+					/>
+				</div>
+			</section>
+			<section class="contenedor-thanks">
+				<span class="thanks-icon"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+				<h1 class="title">Thanks for subscribing!</h1>
+				<p class="thanks-text">
+					A confirmation email has been sent to ash@loremcompany.com. Please open it and click the
+					button inside to confirm your subscription.
+				</p>
+				<button class="btn">Dismiss message</button>
+			</section>
+		</div>
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			Coded by <a href="#">Sail Guerrero</a>.
+		</div>
+	</body>
+</html>
