@@ -68,9 +68,10 @@ h1 {
 }
 .li-icon {
 	color: #ff6355;
+	width: 3em;
 }
 .fa-li {
-	width: 10px;
+	font-size: 1.3em;
 	text-align: center;
 	line-height: 2rem;
 }
