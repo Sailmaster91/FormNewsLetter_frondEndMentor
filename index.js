@@ -5,6 +5,15 @@ const ventanaConfimacion = document.querySelector('.contenedor-thanks');
 const alert = formulario.querySelector('.validate-correo');
 
 const imagenMobile = document.querySelector('.imagen__formulario .oculto');
+window.addEventListener('DOMContentLoaded', function (e) {
+	console.log('ajustando');
+	if (window.innerWidth < 400) {
+		console.log(imagenMobile);
+		imagenMobile.classList.remove('oculto');
+	} else {
+		imagenMobile.classList.add('oculto');
+	}
+});
 window.addEventListener('resize', function (e) {
 	console.log('ajustando');
 	if (window.innerWidth < 400) {
