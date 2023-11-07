@@ -7,7 +7,8 @@
 
 		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
 		<link rel="stylesheet" href="./css/font-awesome.css" />
-		<link rel="stylesheet" href="estilos.css" />
+		<link rel="stylesheet" href="./estilos.css" />
+		<script src="./index.js" defer></script>
 
 		<title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
@@ -18,14 +19,14 @@
 				text-align: center;
 			}
 			.attribution a {
-				color: hsl(228, 45%, 44%);
+				color: hsl(0, 0%, 100%);
 			}
 		</style>
 	</head>
 	<body>
 		<!-- Sign-up form start -->
 		<div class="contenedor">
-			<section class="contenedor__subcriptor oculto">
+			<section class="contenedor__subcriptor">
 				<div class="contenedor__formulario">
 					<h1>Stay updated!</h1>
 					<div class="formulario__info"></div>
@@ -46,34 +47,44 @@
 						</ul>
 					</div>
 
-					<form action="" method="get">
-						<label for="correo">
+					<form action="" method="get" id="formulario" class="formulario">
+						<label class="label-correo" for="correo">
 							Email address<br />
 
-							<input type="text" name="correo" id="correo" placeholder="email@company.com" />
+							<input
+								type="text"
+								name="correo"
+								id="correo"
+								placeholder="email@company.com"
+								class="correo correo--error"
+							/>
 						</label>
 						<p class="validate-correo">Por favor introduzca un correo válido</p>
 						<button type="submit" name="enviar" id="submit-btn" class="submit-btn btn">
 							Subscribe to monthly newsletter
 						</button>
 					</form>
-
-					<p>Hola mundo! Mi primera subida a GitHub</p>
 				</div>
 				<div class="imagen__formulario">
 					<img
 						src="./assets/images/illustration-sign-up-desktop.svg"
 						class="imagen__formulario--svg"
 					/>
+					<img
+						src="./assets/images/illustration-sign-up-mobile.svg"
+						class="imagen__formulario_m--svg oculto"
+					/>
 				</div>
 			</section>
-			<section class="contenedor-thanks">
-				<span class="thanks-icon"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
-				<h1 class="title">Thanks for subscribing!</h1>
-				<p class="thanks-text">
-					A confirmation email has been sent to ash@loremcompany.com. Please open it and click the
-					button inside to confirm your subscription.
-				</p>
+			<section class="contenedor-thanks oculto">
+				<div class="contenedor-thanks_texto">
+					<span class="thanks-icon"><i class="fa fa-check-circle" aria-hidden="true"></i></span>
+					<h1 class="title">Thanks for subscribing!</h1>
+					<p class="thanks-text">
+						A confirmation email has been sent to ash@loremcompany.com. Please open it and click the
+						button inside to confirm your subscription.
+					</p>
+				</div>
 				<button class="btn">Dismiss message</button>
 			</section>
 		</div>
