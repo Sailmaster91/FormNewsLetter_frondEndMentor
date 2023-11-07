@@ -7,7 +7,7 @@ const alert = formulario.querySelector('.validate-correo');
 const imagenMobile = document.querySelector('.imagen__formulario .oculto');
 
 window.addEventListener('resize', function (e) {
-	if (window.innerWidth <= 350) {
+	if (window.innerWidth <= 400) {
 		imagenMobile.classList.remove('oculto');
 	} else {
 		imagenMobile.classList.add('oculto');
