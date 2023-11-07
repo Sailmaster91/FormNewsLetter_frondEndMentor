@@ -215,6 +215,7 @@ p.error {
 	}
 	.imagen__formulario {
 		grid-row: 1/2;
+		width: 100%;
 	}
 	.imagen__formulario_m--svg {
 		width: 100%;
@@ -224,6 +225,7 @@ p.error {
 	}
 	.contenedor__formulario {
 		grid-row: 2/3;
+		padding: 0 1rem;
 	}
 	.input[type='text'] {
 		margin-bottom: 0.8rem;
