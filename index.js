@@ -59,6 +59,7 @@ formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 	if (validarCorreo()) {
 		validarCorreo();
+		window.scrollTo(0, 0);
 		const dissmisBtn = document.querySelector('.contenedor-thanks button');
 		ventanaSuscriptor.classList.add('oculto');
 		ventanaConfimacion.classList.remove('oculto');
@@ -66,6 +67,7 @@ formulario.addEventListener('submit', (e) => {
 		console.log('Enviando Correo');
 		dissmisBtn.addEventListener('click', (e) => {
 			e.preventDefault();
+			window.scrollTo(0, 0);
 			ventanaSuscriptor.classList.remove('oculto');
 			ventanaConfimacion.classList.add('oculto');
 			formulario.correo.value = '';
