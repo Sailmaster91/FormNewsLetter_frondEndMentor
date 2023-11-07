@@ -4,6 +4,16 @@ const ventanaSuscriptor = document.querySelector('.contenedor__subcriptor');
 const ventanaConfimacion = document.querySelector('.contenedor-thanks');
 const alert = formulario.querySelector('.validate-correo');
 
+const imagenMobile = document.querySelector('.imagen__formulario .oculto');
+
+window.addEventListener('resize', function (e) {
+	if (window.innerWidth <= 350) {
+		imagenMobile.classList.remove('oculto');
+	} else {
+		imagenMobile.classList.add('oculto');
+	}
+});
+
 const validarCorreo = () => {
 	const correo = formulario.correo;
 	const validacionCorreo = /[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
