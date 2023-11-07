@@ -177,7 +177,7 @@ p.error {
 	width: fit-content;
 }
 
-@media (width <= 350px) {
+@media (width <= 380px) {
 	.body {
 		font-size: 14px;
 	}
